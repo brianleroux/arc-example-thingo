@@ -1,0 +1,23 @@
+{
+  "name": "claimthingo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create": "AWS_REGION=us-east-1 AWS_PROFILE=personal arc-create",
+    "start": "NODE_ENV=testing AWS_REGION=us-east-1 AWS_PROFILE=personal arc-sandbox",
+    "deploy": "AWS_REGION=us-east-1 AWS_PROFILE=personal arc-deploy",
+    "test": "tape test/*-test.js | tap-spec"
+  },
+  "keywords": [],
+  "author": "Brian LeRoux <b@brian.io>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@architect/workflows": "^1.1.18",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.8.0"
+  },
+  "devDependencies": {
+    "tiny-json-http": "^5.1.2"
+  }
+}

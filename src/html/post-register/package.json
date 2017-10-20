@@ -1,0 +1,6 @@
+{
+  "name": "claims-thingo-post-register",
+  "dependencies": {
+    "@architect/functions": "^1.6.2"
+  }
+}
